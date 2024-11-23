@@ -1,0 +1,311 @@
+:root {
+    --title-color: #0070f3;
+    --bg-color-light: #ffffff;
+    --text-color-light: #333333;
+    --primary-color-light: #0070f3;
+    --secondary-color-light: #f0f0f0;
+}
+
+[data-theme="dark"] {
+    --bg-color-dark: #121212;
+    --text-color-dark: #ffffff;
+    --primary-color-dark: #1e40af;
+    --secondary-color-dark: #333333;
+}
+
+body {
+    width: 100%; 
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color-light);
+    color: var(--text-color-light);
+    transition: background-color 0.3s, color 0.3s;
+    overflow-x: hidden;
+}
+
+body[data-theme="dark"] {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+.navbar {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="dark"] .navbar {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+[data-theme="dark"] .navbar a {
+    color: #f0f0f0;
+}
+
+[data-theme="dark"] h3,
+[data-theme="dark"] #about-text {
+    color: #121212;
+}
+
+[data-theme="dark"] #text-about{
+    color: #f0f0f0;
+}
+
+button,
+.button {
+    background-color: var(--primary-color-light);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+button#theme-toggle {
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+button#theme-toggle:hover,
+.button:hover {
+    background-color: #474747;
+    color: #ffffff;
+    border: 1px solid #0070f3;
+}
+
+[data-theme="dark"] button {
+    background-color: var(--primary-color-dark);
+}
+
+#button-banner {
+    background-color: var(--title-color);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#button-banner:hover {
+    background-color: #005bb5;
+    transform: translateY(-3px);
+}
+
+.main {
+    position: relative;
+    height: 90vh;
+    background-image: url("img/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.521);
+    z-index: 1;
+}
+
+.main * {
+    position: relative;
+    z-index: 2;
+}
+
+.main .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.portfolio-card img,
+.project-card,
+.service-card {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-card:hover img,
+.project-card:hover,
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 40px 0;
+}
+
+.footer a {
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+
+.certification-item img {
+    width: 150px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.certification-item:hover img {
+    transform: scale(1.1);
+}
+
+.certification-item p {
+    font-size: 1rem;
+    color: #4A4A4A;
+    margin-top: 8px;
+    font-weight: 600;
+}
+
+.signal-icon {
+    position: absolute;
+    bottom: -30px;
+    left: 49%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    animation: bounce 1s infinite;
+    z-index: 10;
+}
+
+.arrow {
+    width: 12px;
+    height: 12px;
+    border-right: 2px solid #333;
+    border-bottom: 2px solid #333;
+    transform: rotate(45deg);
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar nav {
+        display: none;
+    }
+
+    .navbar .menu-open {
+        display: block;
+    }
+
+    .certification-cards {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .certification-card {
+        width: 100%;
+    }
+
+    .main {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .mobile-menu {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .mobile-menu a {
+        font-size: 1.2rem;
+        padding: 10px 0;
+    }
+
+    footer {
+        padding: 20px;
+    }
+}
+
+section {
+    padding: 40px 20px; 
+}
+
+input, textarea {
+    font-size: 1rem;
+}
+
+.material-icons {
+    font-size: 24px;
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.mobile-menu.show {
+    display: flex;
+    opacity: 1;
+}
+
+.mobile-menu a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    text-align: center;
+}
+
+.mobile-menu a:hover {
+    color: #0070f3;
+}
+
+.close-btn {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+
