@@ -292,7 +292,7 @@ input, textarea {
     margin: 1rem 0;
     text-decoration: none;
     transition: color 0.3s ease;
-    text-align: center;
+    text-align: center;   
 }
 
 .mobile-menu a:hover {
@@ -308,4 +308,9 @@ input, textarea {
     cursor: pointer;
 }
 
+@media (max-width: 768px) {
+    #theme-toggle {
+        display: none;
+    }
+}
 
