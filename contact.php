@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = trim($_POST['message']);
 
     if (!empty($name) && !empty($email) && !empty($message)) {
-        $to = "gabvf11@outlook.com";
+        $to = "dev.vendramim@gmail.com";
         $subject = "Novo contato de $name";
         $body = "Nome: $name\nEmail: $email\n\nMensagem:\n$message";
         $headers = "From: $email";
