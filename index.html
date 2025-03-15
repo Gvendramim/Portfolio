@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-    <script src="https://unpkg.com/gsap@3.10.0/dist/gsap.min.js"></script> 
+    <script src="https://unpkg.com/gsap@3.10.0/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
@@ -15,6 +16,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="bg-gray-100 text-gray-800">
     <header class="navbar bg-transparent text-white fixed w-full z-50 p-5 transition-all">
         <div class="container mx-auto flex justify-between items-center">
@@ -30,7 +32,8 @@
                     <i class="material-icons">menu</i>
                 </button>
             </div>
-            <button id="theme-toggle" class="ml-4 p-2 rounded-full bg-gray-700 text-white hover:bg-gray-600 transition duration-300">
+            <button id="theme-toggle"
+                class="ml-4 p-2 rounded-full bg-gray-700 text-white hover:bg-gray-600 transition duration-300">
                 <span id="theme-icon" class="material-icons"></span>
             </button>
         </div>
@@ -53,7 +56,8 @@
         <div class="content">
             <h2 class="text-4xl md:text-5xl font-extrabold mb-4 text-center">Olá, sou Gabriel Vendramim</h2>
             <p class="text-xl md:text-2xl text-center mb-6">Desenvolvedor Front-End.</p>
-            <a href="#portfolio" class="inline-block text-white text-lg px-6 py-3 rounded-full transition duration-300" id="button-banner">Veja meus trabalhos</a>
+            <a href="#portfolio" class="inline-block text-white text-lg px-6 py-3 rounded-full transition duration-300"
+                id="button-banner">Veja meus trabalhos</a>
         </div>
         <div class="signal-icon">
             <div class="arrow"></div>
@@ -62,16 +66,15 @@
     <section id="about" class="container mx-auto text-center py-16" data-aos="fade-up">
         <h2 class="text-4xl font-bold text-blue-600 mb-6">Sobre Mim</h2>
         <p class="text-lg text-gray-700 leading-relaxed mb-6" id="text-about">
-            Sou um desenvolvedor Front-End apaixonado por criar soluções digitais modernas e funcionais. 
-            Tenho experiência em projetos que envolvem HTML, CSS, JavaScript, React, e Wordpress. Sempre buscando 
+            Sou um desenvolvedor Front-End apaixonado por criar soluções digitais modernas e funcionais.
+            Tenho experiência em projetos que envolvem HTML, CSS, JavaScript, React, e Wordpress. Sempre buscando
             inovações para entregar o melhor para meus clientes.
         </p>
         <p class="text-lg text-gray-700 leading-relaxed" id="text-about">
-            Além disso, sou entusiasta de boas práticas de design e desempenho, garantindo sites responsivos e 
+            Além disso, sou entusiasta de boas práticas de design e desempenho, garantindo sites responsivos e
             otimizados.
         </p>
-        <a href="/img/pdf/Gabriel Vendramim Ferreira.pdf" 
-            download 
+        <a href="/img/pdf/Gabriel Vendramim Ferreira.pdf" download
             class="mt-6 inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-full transition duration-300">
             Download Currículo
         </a>
@@ -102,7 +105,8 @@
     <section id="portfolio" class="container mx-auto py-16 text-center" data-aos="zoom-in" data-aos-duration="1000">
         <h2 class="text-4xl font-bold text-blue-600 mb-12">Meus Projetos</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="project-card bg-white shadow-lg rounded-lg overflow-hidden transform transition hover:-translate-y-2 hover:shadow-2xl">
+            <div
+                class="project-card bg-white shadow-lg rounded-lg overflow-hidden transform transition hover:-translate-y-2 hover:shadow-2xl">
                 <img src="/img/service (1).png" alt="Imagem do Projeto 1" class="w-full h-48 object-cover">
                 <div class="p-6">
                     <h3 class="text-2xl font-semibold text-blue-600 mb-2">Portfolio React.js</h3>
@@ -110,12 +114,14 @@
                         Desenvolvido com React.js e TailwindCSS. Destaque para componentes dinâmicos e responsividade.
                     </p>
                     <div class="flex justify-between items-center">
-                        <a href="https://github.com/Gvendramim" class="text-blue-500 font-semibold hover:underline">GitHub</a>
+                        <a href="https://github.com/Gvendramim"
+                            class="text-blue-500 font-semibold hover:underline">GitHub</a>
                         <a href="#" class="text-blue-500 font-semibold hover:underline">Live Demo</a>
                     </div>
                 </div>
             </div>
-            <div class="project-card bg-white shadow-lg rounded-lg overflow-hidden transform transition hover:-translate-y-2 hover:shadow-2xl">
+            <div
+                class="project-card bg-white shadow-lg rounded-lg overflow-hidden transform transition hover:-translate-y-2 hover:shadow-2xl">
                 <img src="/img/service (2).png" alt="Imagem do Projeto 1" class="w-full h-48 object-cover">
                 <div class="p-6">
                     <h3 class="text-2xl font-semibold text-blue-600 mb-2">Criação de Sites</h3>
@@ -123,12 +129,14 @@
                         Criação de sites modernos, rápidos e responsivos, com foco na experiência do usuário.
                     </p>
                     <div class="flex justify-between items-center">
-                        <a href="https://github.com/Gvendramim" class="text-blue-500 font-semibold hover:underline">GitHub</a>
+                        <a href="https://github.com/Gvendramim"
+                            class="text-blue-500 font-semibold hover:underline">GitHub</a>
                         <a href="#" class="text-blue-500 font-semibold hover:underline">Live Demo</a>
                     </div>
                 </div>
             </div>
-            <div class="project-card bg-white shadow-lg rounded-lg overflow-hidden transform transition hover:-translate-y-2 hover:shadow-2xl">
+            <div
+                class="project-card bg-white shadow-lg rounded-lg overflow-hidden transform transition hover:-translate-y-2 hover:shadow-2xl">
                 <img src="/img/service (3).png" alt="Imagem do Projeto 1" class="w-full h-48 object-cover">
                 <div class="p-6">
                     <h3 class="text-2xl font-semibold text-blue-600 mb-2">Integração</h3>
@@ -136,47 +144,59 @@
                         Integração de front-end com back-end usando Node.js para funcionalidades avançadas.
                     </p>
                     <div class="flex justify-between items-center">
-                        <a href="https://github.com/Gvendramim" class="text-blue-500 font-semibold hover:underline">GitHub</a>
+                        <a href="https://github.com/Gvendramim"
+                            class="text-blue-500 font-semibold hover:underline">GitHub</a>
                         <a href="#" class="text-blue-500 font-semibold hover:underline">Live Demo</a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>    
+    </section>
     <section id="services" class="container mx-auto text-center py-16" data-aos="fade-up">
         <h2 class="text-4xl font-bold text-blue-600 mb-12">Meus Serviços</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="bg-white shadow-lg rounded-lg p-6 border-t-4 border-blue-600 transition transform hover:-translate-y-2">
+            <div
+                class="bg-white shadow-lg rounded-lg p-6 border-t-4 border-blue-600 transition transform hover:-translate-y-2">
                 <div class="text-blue-600 mb-4">
                     <i class="fas fa-code text-4xl"></i>
                 </div>
                 <h3 class="text-xl font-bold">Desenvolvimento Web</h3>
-                <p class="text-gray-600 mt-4">Criação de sites modernos, rápidos e responsivos, com foco na experiência do usuário.</p>
+                <p class="text-gray-600 mt-4">Criação de sites modernos, rápidos e responsivos, com foco na experiência
+                    do usuário.</p>
             </div>
-            <div class="bg-white shadow-lg rounded-lg p-6 border-t-4 border-green-500 transition transform hover:-translate-y-2">
+            <div
+                class="bg-white shadow-lg rounded-lg p-6 border-t-4 border-green-500 transition transform hover:-translate-y-2">
                 <div class="text-green-500 mb-4">
                     <i class="fas fa-paint-brush text-4xl"></i>
                 </div>
                 <h3 class="text-xl font-bold">Consultoria de UX/UI</h3>
-                <p class="text-gray-600 mt-4">Melhorias na usabilidade e design de interfaces, garantindo uma navegação intuitiva.</p>
+                <p class="text-gray-600 mt-4">Melhorias na usabilidade e design de interfaces, garantindo uma navegação
+                    intuitiva.</p>
             </div>
-            <div class="bg-white shadow-lg rounded-lg p-6 border-t-4 border-yellow-500 transition transform hover:-translate-y-2">
+            <div
+                class="bg-white shadow-lg rounded-lg p-6 border-t-4 border-yellow-500 transition transform hover:-translate-y-2">
                 <div class="text-yellow-500 mb-4">
                     <i class="fas fa-chart-line text-4xl"></i>
                 </div>
                 <h3 class="text-xl font-bold">SEO e Performance</h3>
-                <p class="text-gray-600 mt-4">Otimização de sites para melhorar o ranking nos motores de busca e aumentar a performance.</p>
+                <p class="text-gray-600 mt-4">Otimização de sites para melhorar o ranking nos motores de busca e
+                    aumentar a performance.</p>
             </div>
         </div>
-    </section>       
+    </section>
     <section id="contact" class="container mx-auto text-white text-center" data-aos="fade-left">
         <h2 class="text-4xl font-bold text-blue-600 mb-12">Entre em Contato</h2>
-        <form action="contact.php" method="POST" class="max-w-lg mx-auto bg-white shadow-lg rounded-lg p-6 text-gray-800">
-            <input type="text" name="name" id="name" placeholder="Seu Nome" class="w-full p-3 mb-4 border rounded" required>
-            <input type="email" name="email" id="email" placeholder="Seu Email" class="w-full p-3 mb-4 border rounded" required>
-            <textarea name="message" id="message" placeholder="Sua Mensagem" class="w-full p-3 mb-4 border rounded h-32" required></textarea>
-            <button type="submit" class="w-full bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 rounded-full transition duration-300">Enviar</button>
-        </form>        
+        <form action="contact.php" method="POST"
+            class="max-w-lg mx-auto bg-white shadow-lg rounded-lg p-6 text-gray-800">
+            <input type="text" name="name" id="name" placeholder="Seu Nome" class="w-full p-3 mb-4 border rounded"
+                required>
+            <input type="email" name="email" id="email" placeholder="Seu Email" class="w-full p-3 mb-4 border rounded"
+                required>
+            <textarea name="message" id="message" placeholder="Sua Mensagem" class="w-full p-3 mb-4 border rounded h-32"
+                required></textarea>
+            <button type="submit"
+                class="w-full bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 rounded-full transition duration-300">Enviar</button>
+        </form>
     </section>
     <footer class="footer">
         <div class="container mx-auto text-center">
@@ -202,30 +222,49 @@
         });
 
         function validateForm() {
-            let name = document.getElementById('name').value;
-            let email = document.getElementById('email').value;
-            let message = document.getElementById('message').value;
-            if (!name || !email || !message) {
-                alert("Todos os campos são obrigatórios!");
+            let name = document.getElementById('name').value.trim();
+            let email = document.getElementById('email').value.trim();
+            let message = document.getElementById('message').value.trim();
+            let errorMessage = "";
+
+            if (!name) {
+                errorMessage += "O campo Nome é obrigatório.\n";
+            }
+
+            if (!email) {
+                errorMessage += "O campo Email é obrigatório.\n";
+            } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                errorMessage += "Insira um email válido.\n";
+            }
+
+            if (!message) {
+                errorMessage += "O campo Mensagem é obrigatório.\n";
+            }
+
+            if (errorMessage) {
+                alert(errorMessage);
                 return false;
             }
+
             return true;
         }
-        document.addEventListener("DOMContentLoaded", function() {
-        gsap.from(".project-card", {
-            scrollTrigger: {
-                trigger: ".project-card",
-                start: "top 80%",
-                toggleActions: "play none none none"
-            },
-            opacity: 0,
-            scale: 0.9,
-            rotate: 2,
-            duration: 0.5,
-            stagger: 0.2,
-            ease: "power3.out"
+
+        document.addEventListener("DOMContentLoaded", function () {
+            gsap.from(".project-card", {
+                scrollTrigger: {
+                    trigger: ".project-card",
+                    start: "top 80%",
+                    toggleActions: "play none none none"
+                },
+                opacity: 0,
+                scale: 0.9,
+                rotate: 2,
+                duration: 0.5,
+                stagger: 0.2,
+                ease: "power3.out"
             });
         });
     </script>
 </body>
+
 </html>
