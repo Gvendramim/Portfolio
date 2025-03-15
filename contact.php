@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (mail($to, $subject, $body, $headers)) {
             echo "Mensagem enviada com sucesso!";
         } else {
-            echo "Erro ao enviar a mensagem.";
+            echo "Erro ao enviar sua mensagem.";
         }
     } else {
         echo "Por favor, preencha todos os campos.";
