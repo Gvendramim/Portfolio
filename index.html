@@ -112,28 +112,37 @@
             <h2 class="text-4xl font-extrabold text-center mb-12 text-blue-600">Tech Stack & Ferramentas</h2>
             <div class="stack-container">
                 <div class="stack-item">
-                    <img src="/img/html-5.png" alt="HTML">
+                    <img src="/img/html-5.png" alt="HTML" data-info="HTML5 é a linguagem de marcação usada para estruturar páginas da web.">
                     <p>HTML5</p>
                 </div>
                 <div class="stack-item">
-                    <img src="/img/css-3.png" alt="CSS">
+                    <img src="/img/css-3.png" alt="CSS" data-info="CSS3 é utilizado para estilizar páginas web, controlando layout e aparência.">
                     <p>CSS3</p>
                 </div>
                 <div class="stack-item">
-                    <img src="/img/js.png" alt="JavaScript">
+                    <img src="/img/js.png" alt="JavaScript" data-info="JavaScript é uma linguagem de programação usada para tornar páginas web interativas.">
                     <p>JavaScript</p>
                 </div>
                 <div class="stack-item">
-                    <img src="/img/react.png" alt="React">
+                    <img src="/img/react.png" alt="React" data-info="React.js é uma biblioteca JavaScript para construir interfaces de usuário dinâmicas.">
                     <p>React.js</p>
                 </div>
                 <div class="stack-item">
-                    <img src="/img/wp.png" alt="WordPress">
+                    <img src="/img/wp.png" alt="WordPress" data-info="WordPress é um CMS popular para criação e gerenciamento de sites e blogs.">
                     <p>WordPress</p>
                 </div>
             </div>
         </div>
-    </section>    
+    </section>
+    
+    <!-- Popup -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <p id="popup-text"></p>
+        </div>
+    </div>
+    
     <section id="portfolio" class="container mx-auto py-16 text-center" data-aos="zoom-in" data-aos-duration="1000">
         <h2 class="text-4xl font-bold text-blue-600 mb-12">Meus Projetos</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
