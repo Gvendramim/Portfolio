@@ -40,3 +40,30 @@ menuToggle.addEventListener('click', () => {
 closeMenu.addEventListener('click', () => {
     mobileMenu.classList.add('hidden');
 });
+
+
+// Popup
+
+document.addEventListener("DOMContentLoaded", function () {
+    const images = document.querySelectorAll(".stack-item img");
+    const popup = document.getElementById("popup");
+    const popupText = document.getElementById("popup-text");
+    const closePopup = document.querySelector(".popup .close");
+
+    images.forEach(img => {
+        img.addEventListener("click", function () {
+            popupText.textContent = img.getAttribute("data-info");
+            popup.style.display = "flex";
+        });
+    });
+
+    closePopup.addEventListener("click", function () {
+        popup.style.display = "none";
+    });
+
+    popup.addEventListener("click", function (e) {
+        if (e.target === popup) {
+            popup.style.display = "none";
+        }
+    });
+});
