@@ -43,7 +43,6 @@ closeMenu.addEventListener('click', () => {
 
 
 // Popup
-
 document.addEventListener("DOMContentLoaded", function () {
     const images = document.querySelectorAll(".stack-item img");
     const popup = document.getElementById("popup");
@@ -67,3 +66,4 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
